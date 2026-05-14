@@ -119,5 +119,5 @@ export const RESORT_INFO = {
   checkin:  'Saturday after 3:00 PM',
   checkout: 'Saturday before 10:00 AM',
   management: 'TJW Management Company',
-  mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3524.1!2d-81.0!3d29.17!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s2433+S+Atlantic+Ave+Daytona+Beach+Shores+FL!5e0!3m2!1sen!2sus!4v1',
+  mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3524.059!2d-80.9901!3d29.1712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e6d7d20a4e9d4b%3A0x0!2s2433+S+Atlantic+Ave%2C+Daytona+Beach+Shores%2C+FL+32118!5e0!3m2!1sen!2sus!4v1',
 }
