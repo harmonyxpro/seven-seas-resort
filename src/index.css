@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-ocean-900 antialiased;
+    font-family: 'Lato', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-block bg-gradient-to-br from-ocean-600 to-ocean-800 text-white px-8 py-3.5
+           rounded font-body text-xs tracking-widest uppercase cursor-pointer
+           transition-all duration-200 no-underline border-0
+           hover:-translate-y-px hover:shadow-lg hover:shadow-ocean-600/30
+           active:translate-y-0;
+  }
+
+  .btn-outline-white {
+    @apply inline-block bg-transparent text-white border border-white/70 px-8 py-3.5
+           rounded font-body text-xs tracking-widest uppercase cursor-pointer
+           transition-all duration-200 no-underline
+           hover:bg-white/15 hover:border-white
+           active:translate-y-0;
+  }
+
+  .btn-dark {
+    @apply inline-block bg-ocean-900 text-white px-6 py-2.5
+           rounded font-body text-xs tracking-widest uppercase cursor-pointer
+           transition-all duration-200 no-underline border-0
+           hover:bg-ocean-600 hover:-translate-y-px hover:shadow-md
+           active:translate-y-0;
+  }
+
+  .section-label {
+    @apply font-body text-xs tracking-widest uppercase text-ocean-600 mb-3;
+  }
+
+  .section-title {
+    @apply font-display text-4xl lg:text-5xl text-ocean-900 leading-tight mb-5;
+  }
+
+  .section-sub {
+    @apply font-body text-lg text-slate-500 leading-relaxed max-w-xl;
+  }
+
+  .divider {
+    @apply w-14 h-0.5 bg-gradient-to-r from-ocean-600 to-ocean-200 rounded mb-8;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-sm overflow-hidden
+           transition-all duration-200
+           hover:-translate-y-1 hover:shadow-xl;
+  }
+
+  .img-placeholder {
+    @apply flex items-center justify-center
+           bg-gradient-to-br from-ocean-100 via-ocean-200 to-ocean-300
+           text-ocean-600 font-body text-xs tracking-widest uppercase;
+  }
+
+  .form-input {
+    @apply w-full bg-slate-50 border border-slate-200 rounded px-4 py-3
+           font-body text-sm text-ocean-900
+           transition-colors duration-200
+           focus:outline-none focus:border-ocean-600 focus:bg-white;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .font-body {
+    font-family: 'Lato', sans-serif;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.animate-fade-up-delay-1 {
+  animation: fadeUp 0.8s ease 0.15s forwards;
+  opacity: 0;
+}
+
+.animate-fade-up-delay-2 {
+  animation: fadeUp 0.8s ease 0.3s forwards;
+  opacity: 0;
+}
+
+.animate-fade-up-delay-3 {
+  animation: fadeUp 0.8s ease 0.45s forwards;
+  opacity: 0;
+}
